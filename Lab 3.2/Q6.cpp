@@ -17,10 +17,10 @@ class Complex{
 Complex sum(Complex c1,Complex c2)
 {
 	Complex c3;
-	int treal,timag;
-	treal=c1.real+c2.real;
-	timag=c1.imag+c2.imag;
-	cout<<"Sum of two complex number : "<<treal<<" + "<<timag<<"i"<<endl;
+//	int treal,timag;
+	c3.real=c1.real+c2.real;
+	c3.imag=c1.imag+c2.imag;
+	cout<<"Sum of two complex number : "<<c3.real<<" + "<<c3.imag<<"i"<<endl;
 	return c3;
 }
 int main()
