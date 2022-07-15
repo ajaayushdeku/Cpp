@@ -1,35 +1,40 @@
 #include <iostream>
 using namespace std;
-class unary
+class Unary
 {
  public:
- int count;
- void getdata(int i)
+ int num;
+ void getNum(int num)
  {
- count=i;
+ this->num=num;
  }
- void showdata ()
+ 
+ void showNum()
  {
- cout<< "count=" <<count<<endl;
+ cout<< "Number : " <<num<<endl;
  }
+ 
  void operator ++()
  {
- ++count;
+ ++num;
  }
+ 
   void operator --()
  {
- --count;
+ --num;
  }
 };
 int main()
 {
- index a1;
- a1.getdata(3);
- a1.showdata(); 
- ++a1;
- a1.showdata();
- --a1;
- a1.showdata();
+ Unary u;
+ u.getNum(12);
+ u.showNum(); 
+ ++u;
+ cout<<"After Increment :"<<endl;
+ u.showdata();
+ --u;
+ cout<<"After Decrement :"<<endl;
+ u.showdata();
  return 0;
 }
 
